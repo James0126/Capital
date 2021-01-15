@@ -1,0 +1,167 @@
+@import "/styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainInner {
+  display: flex;
+}
+
+.mainText {
+  align-self: center;
+  margin-right: 150px;
+}
+
+.test {
+  height: 496px;
+  background-color: #0e1ac4;
+  color: white;
+  padding-right: 162px;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 0 130px 94px 162px;
+}
+
+.mainCard {
+  color: white;
+  background-image: linear-gradient(to bottom, #151ea2, #0e1ac4 73%);
+}
+
+.mainTitle {
+  font-size: 78px;
+  font-weight: bold;
+  margin-bottom: 46px;
+}
+
+.titles {
+  color: #0b159d;
+}
+
+.subTitle {
+  font-size: 44px;
+  font-weight: 900;
+  margin: 180px 0px 24px 0px;
+}
+
+.info {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.mainInfo {
+  opacity: 0.65;
+  color: white;
+}
+
+.subInfo {
+  font-weight: 300;
+  color: $subText-color;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexList {
+  justify-content: space-between;
+}
+
+.list {
+  color: $subText-color;
+  list-style-type: none;
+  li::before {
+    font-size: 10px;
+    color: #5a99f7;
+    counter-increment: li;
+    content: counter(decimal-leading-zero);
+
+    margin-right: 0.25em;
+  }
+  li {
+    font-size: 23px;
+    margin-bottom: 47px;
+  }
+}
+
+.applyButton {
+  width: 354px;
+  height: 76px;
+  padding: 27px 122px 25px;
+  border-radius: 3px;
+  box-shadow: 0 21px 12px -8px rgba(0, 0, 0, 0.2);
+  background-color: #3e99ff;
+  border: 0px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form {
+  background-image: url("./images/img-apply.png");
+  background-repeat: no-repeat;
+  padding: 225px 108px 109px;
+  align-self: flex-end;
+}
+
+.partnerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partnerCard {
+  width: 304px;
+  height: 180px;
+  margin: 10px 8px;
+  padding: 82px 113px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.joinUs {
+  height: 900px;
+  background-color: #f3f3f4;
+  display: flex;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  width: 628px;
+}
+.terraCard {
+  width: 628px;
+  height: 290px;
+  background-color: #ffffff;
+}
+.ustCard {
+  width: 304px;
+  height: 350px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.contactCard {
+  width: 304px;
+  height: 350px;
+  background-color: #ffffff;
+  margin: 20px 0 0 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 162px;
+
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #cacaca;
+  }
+}
