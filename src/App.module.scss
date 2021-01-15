@@ -103,10 +103,12 @@
 }
 
 .form {
+  width: 570px;
+  height: 410px;
   background-image: url("./images/img-apply.png");
   background-repeat: no-repeat;
-  padding: 225px 108px 109px;
   align-self: flex-end;
+  padding: 250px 0px 0px 110px;
 }
 
 .partnerWrapper {
@@ -135,16 +137,38 @@
   align-self: flex-end;
   width: 628px;
 }
+
 .terraCard {
   width: 628px;
   height: 290px;
   background-color: #ffffff;
 }
+
 .ustCard {
   width: 304px;
   height: 350px;
   background-color: #ffffff;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: center;
+  div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    form {
+      align-self: flex-end;
+    }
+
+    article {
+      span {
+        font-size: 15px;
+        color: #a5a5a5;
+      }
+    }
+  }
 }
 
 .contactCard {
@@ -152,6 +176,30 @@
   height: 350px;
   background-color: #ffffff;
   margin: 20px 0 0 20px;
+  width: 304px;
+  height: 350px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: center;
+  div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    form {
+      align-self: flex-end;
+    }
+
+    article {
+      span {
+        font-size: 15px;
+        color: #a5a5a5;
+      }
+    }
+  }
 }
 
 .footer {

@@ -98,10 +98,32 @@ function App() {
             </div>
           </div>
           <div className={s.ustCard}>
-            <img src={UST} alt="UST" />
+            <div>
+              <img src={UST} alt="UST" />
+            </div>
+            <div>
+              <article>
+                <span>Learn more about</span>
+                <h2>TerraUSD</h2>
+              </article>
+              <form>
+                <button>arrow</button>
+              </form>
+            </div>
           </div>
           <div className={s.contactCard}>
-            <img src={Contact} alt="Contact" />
+            <div>
+              <img src={Contact} alt="Contact" />
+            </div>
+            <div>
+              <article>
+                <span>Questions?</span>
+                <h2>Contact us</h2>
+              </article>
+              <form>
+                <button>arrow</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
