@@ -1,0 +1,48 @@
+@import "../styles/variables.scss";
+
+.card {
+  padding: 0 130px 94px 162px;
+  color: white;
+}
+
+.inner {
+  justify-content: space-between;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.title {
+  color: #0b159d;
+  font-size: 44px;
+  font-weight: 900;
+  margin: 180px 0px 24px 0px;
+}
+
+.info {
+  font-size: 18px;
+  font-style: italic;
+  color: #282828;
+  font-weight: 300;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 64px;
+  }
+}
+
+.list {
+  color: $subText-color;
+  list-style-type: none;
+
+  li::before {
+    font-size: 10px;
+    color: #5a99f7;
+    content: counter(disc);
+  }
+
+  li {
+    font-size: 23px;
+    margin-bottom: 47px;
+  }
+}

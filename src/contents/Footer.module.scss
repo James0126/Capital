@@ -1,0 +1,28 @@
+.footer {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 162px;
+
+  span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #cacaca;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 28px;
+    }
+  }
+
+  form {
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 56px;
+    }
+  }
+}
