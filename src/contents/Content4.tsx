@@ -14,10 +14,8 @@ const Content4 = () => (
     </article>
     <div className={s.cardWrapper}>
       <div className={s.terraCard}>
-        <div>
-          <img src={Terra} alt="Terra" className={s.img} />
-        </div>
-        <div>
+        <img src={Terra} alt="Terra" className={s.img} />
+        <section>
           <article>
             <span>Learn more about</span>
             <h2>Terra</h2>
@@ -25,13 +23,11 @@ const Content4 = () => (
           <form>
             <Button image={ButtonImg} />
           </form>
-        </div>
+        </section>
       </div>
       <div className={s.subCard}>
-        <div>
-          <img src={UST} alt="UST" className={s.img} />
-        </div>
-        <div>
+        <img src={UST} alt="UST" className={s.img} />
+        <section>
           <article>
             <span>Learn more about</span>
             <h2>TerraUSD</h2>
@@ -39,13 +35,11 @@ const Content4 = () => (
           <form>
             <Button image={ButtonImg} />
           </form>
-        </div>
+        </section>
       </div>
       <div className={s.subCard}>
-        <div>
-          <img src={Contact} alt="Contact" className={s.img} />
-        </div>
-        <div>
+        <img src={Contact} alt="Contact" className={s.img} />
+        <section>
           <article>
             <span>Questions?</span>
             <h2>Contact us</h2>
@@ -53,7 +47,7 @@ const Content4 = () => (
           <form>
             <Button image={ButtonImg} />
           </form>
-        </div>
+        </section>
       </div>
     </div>
   </div>

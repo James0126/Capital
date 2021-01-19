@@ -9,11 +9,11 @@ const Content1 = () => (
         We help Founders get to market as quickly and <br />
         frictionlessly as possible.
       </p>
-      <ul className={s.list}>
+      <ol className={s.list}>
         <li>Every week, we identify the most promising projects</li>
         <li>We provide capital to cover launch and audit costs</li>
         <li>
-          We ask that TerraUSD, the interchain stablecoin,
+          We ask that <u>TerraUSD,</u> the interchain stablecoin,
           <br /> be incorporated in some way
         </li>
         <li>We do not take any allocation of tokens before launch</li>
@@ -21,7 +21,7 @@ const Content1 = () => (
           We provide ongoing support to Founders, and access
           <br /> to the Terra ecosystem
         </li>
-      </ul>
+      </ol>
     </section>
   </section>
 );

@@ -55,18 +55,38 @@
 }
 
 .terraCard {
+  width: 628px;
+  height: 290px;
+  background-color: #ffffff;
+  display: flex;
+  padding: 55px 38px 55px 63px;
+  font-weight: bold;
+  text-align: right;
+  justify-content: space-between;
+  font-size: 26px;
+
+  article {
+    height: 180px;
+
+    span {
+      font-size: 15px;
+      color: #a5a5a5;
+    }
+  }
+
   @media (max-width: $break-point) {
     width: 311px;
     height: 185px;
-    background-color: #ffffff;
     margin-top: 20px;
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-weight: bold;
-    div {
+    font-size: 16px;
+    padding: 0 32px;
+    text-align: left;
+
+    section {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 100%;
 
       form {
@@ -74,43 +94,13 @@
       }
 
       article {
-        span {
-          font-size: 15px;
-          color: #a5a5a5;
-        }
-      }
-    }
-  }
-
-  @media (min-width: $break-point) {
-    width: 628px;
-    height: 290px;
-    background-color: #ffffff;
-    display: flex;
-    align-self: flex-end;
-    padding: 55px 38px 55px 63px;
-    justify-content: space-between;
-    text-align: right;
-    font-weight: bold;
-    font-size: 26px;
-
-    article {
-      height: 180px;
-
-      span {
-        font-size: 15px;
-        color: #a5a5a5;
+        height: 45px;
       }
     }
   }
 }
 
 .subCard {
-  @media (max-width: $break-point) {
-    width: 311px;
-    height: 185px;
-  }
-
   width: 304px;
   height: 350px;
   background-color: #ffffff;
@@ -119,10 +109,23 @@
   flex-wrap: wrap;
   align-items: center;
   font-weight: bold;
-  div {
+  justify-content: center;
+
+  @media (max-width: $break-point) {
+    width: 311px;
+    height: 185px;
+    padding: 0 32px;
+    justify-content: flex-start;
+  }
+
+  section {
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+
+    @media (max-width: $break-point) {
+      justify-content: space-between;
+    }
 
     form {
       align-self: flex-end;
@@ -146,6 +149,5 @@
 .img {
   @media (max-width: $break-point) {
     width: 64px;
-    height: 64px;
   }
 }
