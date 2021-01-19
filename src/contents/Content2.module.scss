@@ -1,14 +1,20 @@
+@import "../styles/variables.scss";
+
 .card {
   color: white;
   background-color: #0e1ac4;
   padding: 119px 130px 0 162px;
   height: 529px;
 
-  @media (max-width: 1200px) {
-    padding: 30px 32px 0 32px;
+  @media (max-width: $subBreak-point) {
+    padding: 85px 32px 0 32px;
     display: flex;
     justify-content: center;
     height: 496px;
+  }
+
+  @media (max-width: $break-point) {
+    padding: 30px 18px 0 18px;
   }
 }
 
@@ -17,13 +23,13 @@
   font-weight: 900;
   margin-bottom: 24px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 32px;
   }
 }
 
 .text {
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     align-self: center;
   }
 }
@@ -34,7 +40,7 @@
   opacity: 0.65;
   line-height: 1.56;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 12px;
   }
 }
@@ -44,7 +50,12 @@
   width: 570px;
   height: 410px;
   justify-content: center;
+  align-self: center;
   padding-bottom: 109px;
+
+  @media (max-width: $break-point) {
+    width: 100%;
+  }
 }
 
 .applyButton {
@@ -60,7 +71,7 @@
   font-weight: bold;
   align-self: flex-end;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     width: 259px;
     height: 60px;
     text-align: center;
@@ -70,11 +81,14 @@
 .inner {
   display: flex;
   justify-content: space-between;
+  background-image: url("../images/img-apply.png");
   background-repeat: no-repeat;
   background-position: right;
+  width: 100%;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     background-position: center;
+    background-image: url("../images/img-apply-mobile.png");
     flex-direction: column;
     padding-top: 100px;
   }

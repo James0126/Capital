@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 .card {
   height: 900px;
   padding: 0px 130px 94px 162px;
@@ -5,7 +7,7 @@
   background-color: #f3f3f4;
   justify-content: space-between;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -14,7 +16,7 @@
 }
 
 .text {
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     flex-direction: column;
     display: flex;
   }
@@ -26,7 +28,7 @@
   font-weight: 900;
   margin: 180px 0px 24px 0px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 32px;
   }
 }
@@ -37,13 +39,13 @@
   color: #282828;
   font-weight: 300;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 15px;
   }
 }
 
 .cardWrapper {
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     display: flex;
     align-self: flex-end;
     width: 628px;
@@ -53,7 +55,7 @@
 }
 
 .terraCard {
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     width: 311px;
     height: 185px;
     background-color: #ffffff;
@@ -80,7 +82,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     width: 628px;
     height: 290px;
     background-color: #ffffff;
@@ -104,7 +106,7 @@
 }
 
 .subCard {
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     width: 311px;
     height: 185px;
   }
@@ -136,13 +138,13 @@
 }
 
 .subCard:last-child {
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     margin-left: 20px;
   }
 }
 
 .img {
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     width: 64px;
     height: 64px;
   }

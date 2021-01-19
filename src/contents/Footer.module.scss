@@ -1,19 +1,22 @@
-.footer {
-  @media (max-width: 1200px) {
-    flex-direction: column;
-  }
+@import "../styles/variables.scss";
 
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 162px;
+
+  @media (max-width: $break-point) {
+    flex-direction: column;
+    padding: 40px 0;
+  }
 
   span {
     font-size: 13px;
     font-weight: 500;
     color: #cacaca;
     text-align: center;
-    @media (max-width: 1200px) {
+    @media (max-width: $break-point) {
       margin-bottom: 28px;
     }
   }
@@ -22,7 +25,7 @@
     display: flex;
     width: 164px;
     justify-content: space-between;
-    @media (max-width: 1200px) {
+    @media (max-width: $break-point) {
       margin-bottom: 56px;
       width: 182px;
     }

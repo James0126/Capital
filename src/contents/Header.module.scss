@@ -1,5 +1,7 @@
+@import "../styles/variables.scss";
+
 .card {
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     padding: 0 130px 94px 162px;
     background-image: url("../images/img-header.png");
     background-repeat: no-repeat;
@@ -17,6 +19,7 @@
 
 .inner {
   display: flex;
+  width: 100%;
 }
 
 .img {
@@ -33,7 +36,7 @@
   font-weight: bold;
   margin-bottom: 46px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 52px;
   }
 }
@@ -43,7 +46,7 @@
   font-style: italic;
   opacity: 0.65;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 15px;
   }
 }

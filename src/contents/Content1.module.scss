@@ -1,7 +1,7 @@
 @import "../styles/variables.scss";
 
 .card {
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     padding: 0 130px 94px 162px;
   }
   padding: 0 32px 94px 32px;
@@ -11,7 +11,7 @@
 .inner {
   justify-content: space-between;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $break-point) {
     display: flex;
   }
 }
@@ -21,7 +21,7 @@
   font-size: 44px;
   font-weight: 900;
   margin: 180px 0px 24px 0px;
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     font-size: 32px;
   }
 }
@@ -32,14 +32,14 @@
   color: #282828;
   font-weight: 300;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $break-point) {
     margin-bottom: 64px;
     font-size: 15px;
   }
 }
 
 .list {
-  color: $subText-color;
+  color: $list-color;
   list-style-type: none;
   counter-reset: my-counter;
   li::before {
@@ -52,7 +52,7 @@
     font-size: 23px;
     margin-bottom: 47px;
     counter-increment: my-counter;
-    @media (max-width: 1200px) {
+    @media (max-width: $break-point) {
       font-size: 17px;
     }
   }
