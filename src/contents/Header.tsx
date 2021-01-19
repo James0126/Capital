@@ -1,5 +1,6 @@
 import React from "react";
-import KV from "../images/kv.png";
+import ButtonImg from "../images/img-header-button.png";
+import Button from "../components/Button";
 import s from "./Header.module.scss";
 
 const Header = () => (
@@ -22,10 +23,9 @@ const Header = () => (
         </p>
         <div className={s.learn}>
           <span>Learn more</span>
-          <button>arrow</button>
+          <Button image={ButtonImg} />
         </div>
       </article>
-      <img src={KV} alt="terra" className={s.img} />
     </section>
   </div>
 );

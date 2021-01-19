@@ -2,11 +2,13 @@ import React from "react";
 import UST from "../images/img-ust.png";
 import Contact from "../images/img-contact.png";
 import Terra from "../images/img-terra.png";
+import ButtonImg from "../images/img-button.png";
+import Button from "../components/Button";
 import s from "./Content4.module.scss";
 
 const Content4 = () => (
   <div className={s.card}>
-    <article>
+    <article className={s.text}>
       <h1 className={s.title}>JOIN US</h1>
       <p className={s.info}>We’re on a mission to set money free.</p>
     </article>
@@ -21,7 +23,7 @@ const Content4 = () => (
             <h2>Terra</h2>
           </article>
           <form>
-            <button>arrow</button>
+            <Button image={ButtonImg} />
           </form>
         </div>
       </div>
@@ -35,7 +37,7 @@ const Content4 = () => (
             <h2>TerraUSD</h2>
           </article>
           <form>
-            <button>arrow</button>
+            <Button image={ButtonImg} />
           </form>
         </div>
       </div>
@@ -49,7 +51,7 @@ const Content4 = () => (
             <h2>Contact us</h2>
           </article>
           <form>
-            <button>arrow</button>
+            <Button image={ButtonImg} />
           </form>
         </div>
       </div>

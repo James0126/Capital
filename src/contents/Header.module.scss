@@ -1,6 +1,18 @@
 .card {
-  padding: 0 0 94px 162px;
+  @media (min-width: 1200px) {
+    padding: 0 130px 94px 162px;
+    background-image: url("../images/img-header.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 1080px;
+  }
+  height: 642px;
+  background-image: url("../images/img-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 0 32px 94px 32px;
   color: white;
+  display: flex;
 }
 
 .inner {
@@ -20,20 +32,38 @@
   font-size: 78px;
   font-weight: bold;
   margin-bottom: 46px;
+
+  @media (max-width: 1200px) {
+    font-size: 52px;
+  }
 }
 
 .info {
   font-size: 18px;
   font-style: italic;
   opacity: 0.65;
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+  }
 }
 
 .learn {
   margin-top: 18px;
-
+  display: flex;
   span {
+    align-self: center;
     margin-right: 8px;
     font-size: 14px;
     font-weight: 500;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+
+  img {
+    width: 26px;
   }
 }

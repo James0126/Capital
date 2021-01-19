@@ -1,46 +1,81 @@
 .card {
-  padding: 0 130px 0px 162px;
   color: white;
-  display: flex;
   background-color: #0e1ac4;
-  height: 496px;
-  justify-content: space-between;
-  align-items: center;
+  padding: 119px 130px 0 162px;
+  height: 529px;
+
+  @media (max-width: 1200px) {
+    padding: 30px 32px 0 32px;
+    display: flex;
+    justify-content: center;
+    height: 496px;
+  }
 }
 
 .title {
   font-size: 44px;
   font-weight: 900;
   margin-bottom: 24px;
+
+  @media (max-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  @media (max-width: 1200px) {
+    align-self: center;
+  }
 }
 
 .info {
   font-size: 18px;
   font-style: italic;
   opacity: 0.65;
+  line-height: 1.56;
+
+  @media (max-width: 1200px) {
+    font-size: 12px;
+  }
 }
 
 .form {
-  background-image: url("../images/img-apply.png");
-  background-repeat: no-repeat;
+  display: flex;
   width: 570px;
   height: 410px;
-  align-self: flex-end;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  padding-bottom: 109px;
 }
 
 .applyButton {
   width: 354px;
   height: 76px;
-  padding: 27px 122px 25px;
   border-radius: 3px;
   box-shadow: 0 21px 12px -8px rgba(0, 0, 0, 0.2);
   background-color: #3e99ff;
-  border: 0px;
+  border: none;
   color: white;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+  align-self: flex-end;
+
+  @media (max-width: 1200px) {
+    width: 259px;
+    height: 60px;
+    text-align: center;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media (max-width: 1200px) {
+    background-position: center;
+    flex-direction: column;
+    padding-top: 100px;
+  }
 }
