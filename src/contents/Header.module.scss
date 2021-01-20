@@ -1,20 +1,24 @@
 @import "../styles/variables.scss";
 
 .card {
-  @media (min-width: $break-point) {
-    padding: 0 130px 94px 162px;
-    background-image: url("../images/img-header.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 1080px;
-  }
-  height: 642px;
-  background-image: url("../images/img-header-mobile.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  padding: 0 32px 94px 32px;
   color: white;
   display: flex;
+  padding: 0 130px 94px 162px;
+  background-image: url("../images/img-header.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 1080px;
+
+  @media (max-width: $break-point) {
+    height: 642px;
+    background-image: url("../images/img-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  @media (max-width: $subBreak-point) {
+    padding: 0 32px 94px 32px;
+  }
 }
 
 .inner {

@@ -7,6 +7,10 @@
   background-color: #f3f3f4;
   justify-content: space-between;
 
+  @media (max-width: $subBreak-point) {
+    padding: 0px 32px 94px 32px;
+  }
+
   @media (max-width: $break-point) {
     flex-direction: column;
     justify-content: center;
@@ -45,13 +49,17 @@
 }
 
 .cardWrapper {
-  @media (min-width: $break-point) {
-    display: flex;
-    align-self: flex-end;
-    width: 628px;
-  }
+  display: flex;
+  width: 628px;
+  margin-left: 40px;
   flex-wrap: wrap;
-  width: 311px;
+  align-self: flex-end;
+
+  @media (max-width: $break-point) {
+    width: 311px;
+    align-self: center;
+    margin-left: 0px;
+  }
 }
 
 .terraCard {
@@ -141,8 +149,10 @@
 }
 
 .subCard:last-child {
-  @media (min-width: $break-point) {
-    margin-left: 20px;
+  margin-left: 20px;
+
+  @media (max-width: $break-point) {
+    margin-left: 0px;
   }
 }
 
