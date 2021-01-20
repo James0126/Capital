@@ -3,7 +3,7 @@
 .card {
   padding: 0 130px 94px 162px;
 
-  @media (max-width: $subBreak-point) {
+  @media (max-width: $break-point) {
     padding: 0 32px 94px 32px;
   }
 }
@@ -21,6 +21,11 @@
 .partnerWrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 180px;
+
+  @media (max-width: $break-point) {
+    margin-bottom: 93px;
+  }
 }
 
 .partnerCard {

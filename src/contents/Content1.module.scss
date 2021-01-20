@@ -7,16 +7,14 @@
   @media (max-width: $break-point) {
     padding: 0 32px 94px 32px;
   }
-  @media (max-width: $subBreak-point) {
-    padding: 85px 32px 0 32px;
-  }
 }
 
 .inner {
+  display: flex;
   justify-content: space-between;
 
-  @media (min-width: $break-point) {
-    display: flex;
+  @media (max-width: $break-point) {
+    flex-direction: column;
   }
 }
 
@@ -48,14 +46,13 @@
   color: $list-color;
   list-style-type: none;
   counter-reset: list-counter;
-  margin-bottom: 180px;
-  margin-left: 102px;
+  margin: 0px 0px 180px 50px;
 
   display: flex;
   flex-direction: column;
 
   @media (max-width: $break-point) {
-    margin-left: 0;
+    margin: 0;
   }
 
   li {
