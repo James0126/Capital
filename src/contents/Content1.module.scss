@@ -63,19 +63,22 @@
     margin-bottom: 47px;
     counter-increment: list-counter;
     position: relative;
+    width: 585px;
     @media (max-width: $break-point) {
       font-size: 17px;
       margin-bottom: 64px;
+      width: 100%;
     }
   }
 
   li::before {
     content: "0" counter(list-counter);
     font-size: 10px;
-    color: #5a99f7;
     font-weight: bolder;
-    position: absolute;
     left: calc(-1 * 31px);
+    line-height: 2.5;
+    color: #5a99f7;
+    position: absolute;
     vertical-align: middle;
 
     @media (max-width: $break-point) {
