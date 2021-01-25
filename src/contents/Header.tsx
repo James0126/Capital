@@ -22,7 +22,7 @@ const Header = () => (
           of the blockchain ecosystem, together.
         </p>
         <div className={s.learn}>
-          <span>Learn more</span>
+          <span>Learn More</span>
           <Button image={ButtonImg} />
         </div>
       </article>
