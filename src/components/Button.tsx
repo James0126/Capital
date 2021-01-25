@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./Button.module.scss";
 
 type Props = { image?: string; link?: string; style?: string; text?: string };

@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./Content1.module.scss";
 
 const Content1 = () => (
