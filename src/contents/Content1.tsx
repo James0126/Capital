@@ -3,7 +3,7 @@ import s from "./Content1.module.scss";
 const Content1 = () => (
   <section className={s.card}>
     <h1 className={s.title}>HOW IT WORKS</h1>
-    <section className={s.inner}>
+    <article className={s.inner}>
       <p className={s.info}>
         We help Founders get to market as quickly and <br />
         frictionlessly as possible.
@@ -21,7 +21,7 @@ const Content1 = () => (
           ecosystem
         </li>
       </ol>
-    </section>
+    </article>
   </section>
 );
 

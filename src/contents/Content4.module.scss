@@ -23,7 +23,7 @@
 }
 
 .title {
-  color: #0b159d;
+  color: $title-color;
   font-size: 44px;
   font-weight: 900;
   margin: 180px 0px 24px 0px;
@@ -36,7 +36,7 @@
 .info {
   font-size: 18px;
   font-style: italic;
-  color: #282828;
+  color: $text-color;
   font-weight: 300;
 
   @media (max-width: $break-point) {
@@ -61,7 +61,7 @@
 .terraCard {
   width: 628px;
   height: 290px;
-  background-color: #ffffff;
+  background-color: $white;
   display: flex;
   padding: 55px 38px 55px 63px;
   font-weight: bold;
@@ -74,7 +74,7 @@
 
     span {
       font-size: 15px;
-      color: #a5a5a5;
+      color: $gray;
     }
   }
 
@@ -107,7 +107,7 @@
 .subCard {
   width: 304px;
   height: 350px;
-  background-color: #ffffff;
+  background-color: $white;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +138,7 @@
     article {
       span {
         font-size: 15px;
-        color: #a5a5a5;
+        color: $gray;
       }
     }
   }

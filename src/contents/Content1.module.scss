@@ -2,7 +2,7 @@
 
 .card {
   padding: 0 130px 94px 162px;
-  color: white;
+  color: $white;
 
   @media (max-width: $break-point) {
     padding: 0 32px 94px 32px;
@@ -19,7 +19,7 @@
 }
 
 .title {
-  color: #0b159d;
+  color: $title-color;
   font-size: 44px;
   font-weight: 900;
   margin: 180px 0px 24px 0px;
@@ -33,7 +33,7 @@
 .info {
   font-size: 18px;
   font-style: italic;
-  color: #282828;
+  color: $text-color;
   font-weight: 300;
 
   @media (max-width: $break-point) {
@@ -43,7 +43,7 @@
 }
 
 .list {
-  color: $list-color;
+  color: $text-color;
   list-style-type: none;
   counter-reset: list-counter;
   margin: 0px 0px 180px 50px;
@@ -74,7 +74,7 @@
     font-weight: bolder;
     left: calc(-1 * 31px);
     line-height: 2.5;
-    color: #5a99f7;
+    color: $skyblue;
     position: absolute;
     vertical-align: middle;
 

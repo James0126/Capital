@@ -14,7 +14,7 @@
   span {
     font-size: 13px;
     font-weight: 500;
-    color: #cacaca;
+    color: $subtext-color;
     text-align: center;
     @media (max-width: $break-point) {
       margin-bottom: 28px;

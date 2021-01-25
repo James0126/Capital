@@ -9,16 +9,14 @@ import Footer from "./contents/Footer";
 
 function App() {
   return (
-    <div className={s.app}>
-      <header className={s.header}>
-        <Header />
-      </header>
+    <section className={s.app}>
+      <Header />
       <Content1 />
       <Content2 />
       <Content3 />
       <Content4 />
       <Footer />
-    </div>
+    </section>
   );
 }
 

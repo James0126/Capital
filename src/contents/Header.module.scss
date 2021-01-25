@@ -1,21 +1,23 @@
 @import "../styles/variables.scss";
 
+.header {
+  background-image: linear-gradient(to bottom, #151ea2, #0e1ac4 73%);
+}
+
 .card {
-  color: white;
+  color: $white;
   display: flex;
-  padding: 0 130px 94px 162px;
+  padding: 0 130px 0px 162px;
   background-image: url("../images/img-header.png");
   background-repeat: no-repeat;
   background-position: top;
   height: 1080px;
-
   @media (max-width: $break-point) {
     padding: 0px 0px 200px 32px;
-
-    height: 720px;
     background-image: url("../images/img-header-mobile.png");
     background-repeat: no-repeat;
     background-position: right top;
+    height: 720px;
   }
 }
 

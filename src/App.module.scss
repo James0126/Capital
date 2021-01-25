@@ -1,5 +1,3 @@
-@import "/styles/variables.scss";
-
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +5,5 @@
 }
 
 .app {
-  width: 100%;
-}
-
-.header {
-  background-image: linear-gradient(to bottom, #151ea2, #0e1ac4 73%);
+  -webkit-text-size-adjust: 100%;
 }

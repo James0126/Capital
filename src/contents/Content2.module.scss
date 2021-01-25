@@ -1,8 +1,8 @@
 @import "../styles/variables.scss";
 
 .card {
-  color: white;
-  background-color: #0e1ac4;
+  color: $white;
+  background-color: $blue;
   padding: 119px 130px 0 162px;
   height: 529px;
 
@@ -61,7 +61,7 @@
   box-shadow: 0 21px 12px -8px rgba(0, 0, 0, 0.2);
   background-color: #3e99ff;
   border: none;
-  color: white;
+  color: $white;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
