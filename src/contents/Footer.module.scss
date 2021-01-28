@@ -4,11 +4,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 162px;
-
-  @media (max-width: $break-point) {
+  padding: 40px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media (max-width: $break-point-lg) {
+    max-width: 1060px;
+  }
+  @media (max-width: $break-point-md) {
+    padding: 40px 100px;
+    max-width: none;
+  }
+  @media (max-width: $break-point-sm) {
     flex-direction: column;
-    padding: 40px 0;
+    padding: 56px 0;
   }
 
   span {
@@ -16,24 +24,39 @@
     font-weight: 500;
     color: $subtext-color;
     text-align: center;
-    @media (max-width: $break-point) {
+    letter-spacing: -0.3px;
+    @media (max-width: $break-point-sm) {
       margin-bottom: 28px;
     }
   }
 
   form {
-    display: flex;
-    width: 164px;
-    justify-content: space-between;
-    @media (max-width: $break-point) {
-      margin-bottom: 56px;
-      width: 182px;
+    a {
+      margin: 0 6px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .button {
+      width: 32px;
+      height: 32px;
+      background: none;
+      border: none;
+      appearance: none;
+      outline: 0;
+      cursor: pointer;
+      transition: .2s;
+      &:hover {
+        opacity: .75;
+      }
+    }    
+    @media (max-width: $break-point-sm) {
+      a {
+        margin: 0 9px;
+        &:last-child {
+          margin-right: 9px;
+        }
+      }
     }
   }
-}
-
-.button {
-  width: 32px;
-  background: none;
-  border: none;
 }

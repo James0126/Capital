@@ -1,11 +1,18 @@
 @import "../styles/variables.scss";
 
 .card {
-  padding: 0 130px 94px 162px;
   color: $white;
-
-  @media (max-width: $break-point) {
-    padding: 0 32px 94px 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media (max-width: $break-point-lg) {
+    max-width: 1060px;
+  }
+  @media (max-width: $break-point-md) {
+    padding: 0 100px;
+    max-width: none;
+  }
+  @media (max-width: $break-point-sm) {
+    padding: 0 30px;
   }
 }
 
@@ -13,7 +20,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $break-point) {
+  @media (max-width: $break-point-md) {
     flex-direction: column;
   }
 }
@@ -21,10 +28,11 @@
 .title {
   color: $title-color;
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 800;
+  letter-spacing: -0.3px;
   margin: 180px 0px 24px 0px;
 
-  @media (max-width: $break-point) {
+  @media (max-width: $break-point-sm) {
     font-size: 32px;
     margin-top: 100px;
   }
@@ -35,10 +43,24 @@
   font-style: italic;
   color: $text-color;
   font-weight: 300;
+  line-height: 1.56;
+  letter-spacing: -0.3px;
+  padding-right: 20px;
+  flex: 1;
 
-  @media (max-width: $break-point) {
+  @media (max-width: $break-point-md) {
     margin-bottom: 64px;
+  }
+
+  @media (max-width: $break-point-sm) {
+    margin-bottom: 44px;
     font-size: 15px;
+    font-weight: 400;
+  }
+  @media (max-width: $break-point-xs) {
+    .not_mobile_br {
+      display: none;
+    }
   }
 }
 
@@ -46,42 +68,61 @@
   color: $text-color;
   list-style-type: none;
   counter-reset: list-counter;
-  margin: 0px 0px 180px 50px;
+  margin: 2px 0px 180px 0;
+  flex: 1;
 
   display: flex;
   flex-direction: column;
 
-  @media (max-width: $break-point) {
-    margin: 0;
+
+  @media (max-width: $break-point-sm) {
+    margin: 0 0 68px 0;
+  }
+
+  a {
+    color: $text-color;
+    transition: .2s;
+    border-bottom: solid 1px $text-color;
+  }
+
+  a:hover {
+    color: $skyblue;
+    border-bottom: solid 1px $skyblue;
   }
 
   li {
     font-size: 23px;
+    font-weight: 300;
+    line-height: 1.52;
+    letter-spacing: -0.5px;
+    padding-left: 53px;
     margin-bottom: 47px;
     counter-increment: list-counter;
     position: relative;
-    width: 585px;
-    @media (max-width: $break-point) {
+    @media (max-width: $break-point-md) {
+      padding-left: 43px;
+      padding: 28px 0 0;
+    }
+    @media (max-width: $break-point-sm) {
       font-size: 17px;
-      margin-bottom: 64px;
-      width: 100%;
+      font-weight: 400;
+      padding: 28px 0 0;
+      margin-bottom: 32px;
     }
   }
 
   li::before {
     content: "0" counter(list-counter);
     font-size: 10px;
-    font-weight: bolder;
-    left: calc(-1 * 31px);
+    font-weight: 900;
+    left: 10px;
     line-height: 2.5;
     color: $skyblue;
     position: absolute;
     vertical-align: middle;
-
-    @media (max-width: $break-point) {
-      display: flex;
+    @media (max-width: $break-point-md) {
+      top: 0;
       left: 0;
-      top: calc(-1 * 31px);
     }
   }
 }

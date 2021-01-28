@@ -1,46 +1,73 @@
 @import "../styles/variables.scss";
 
 .card {
-  padding: 0 130px 94px 162px;
-
-  @media (max-width: $break-point) {
-    padding: 0 32px 94px 32px;
+  padding: 180px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  @media (max-width: $break-point-lg) {
+    max-width: 1060px;
+  }
+  @media (max-width: $break-point-md) {
+    padding: 100px 100px;
+    max-width: none;
+  }
+  @media (max-width: $break-point-sm) {
+    padding: 100px 30px;
   }
 }
 
 .title {
   color: $title-color;
   font-size: 44px;
-  font-weight: 900;
-  margin: 180px 0px 24px 0px;
-  @media (max-width: $break-point) {
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  @media (max-width: $break-point-sm) {
     font-size: 32px;
   }
 }
 
 .partnerWrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 180px;
-
-  @media (max-width: $break-point) {
-    margin-bottom: 93px;
+  margin-top: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
+  @media (max-width: $break-point-sm) {
+    margin-top: 38.5px;
+    margin-left: -1.5px;
+    margin-right: -1.5px;
   }
 }
 
 .partnerCard {
-  width: 304px;
+  flex: 1;
   height: 180px;
-  margin: 10px 8px;
+  margin: 10px;
   background-color: $partnerCard-color;
   border: none;
-  @media (max-width: $break-point) {
-    width: 154px;
+  outline: 0;
+  appearance: none;
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    background-color: lighten($partnerCard-color, 1.5%);
+  }
+  @media (max-width: $break-point-md) {
+    flex: 1 1 40%;
+    margin: 10px;
+  }
+  @media (max-width: $break-point-sm) {
+    flex: 1 1 40%;
     height: 100px;
     margin: 1.5px;
   }
 
   img {
-    width: 124px;
+    width: auto;
+    height: 38px;
+    @media (max-width: $break-point-sm) {
+      height: 31px;
+    }
   }
 }

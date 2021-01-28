@@ -1,34 +1,47 @@
 @import "../styles/variables.scss";
 
 .card {
-  height: 900px;
-  padding: 0px 130px 94px 162px;
-  display: flex;
   background-color: #f3f3f4;
-  justify-content: space-between;
-
-  @media (max-width: $break-point) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 32px 245px 32px;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media (max-width: $break-point-lg) {
+      max-width: 1060px;
+    }
+    @media (max-width: $break-point-md) {
+      padding: 100px 100px;
+      max-width: none;
+      flex-direction: column;
+    }
+    @media (max-width: $break-point-sm) {
+      padding: 100px 30px;
+    }
   }
 }
 
 .text {
-  @media (max-width: $break-point) {
-    flex-direction: column;
-    display: flex;
+  flex: 1;
+  @media (max-width: $break-point-md) {
+    flex: none;
+    margin-bottom: 40px;
   }
 }
 
 .title {
   color: $title-color;
   font-size: 44px;
-  font-weight: 900;
-  margin: 180px 0px 24px 0px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin: 50px 0px 8px 0px;
 
-  @media (max-width: $break-point) {
+  @media (max-width: $break-point-md) {
+    margin: 0 0 8px 0;
+  }
+
+  @media (max-width: $break-point-sm) {
     font-size: 32px;
   }
 }
@@ -38,122 +51,207 @@
   font-style: italic;
   color: $text-color;
   font-weight: 300;
+  line-height: 1.89;
+  letter-spacing: -0.41px;
 
-  @media (max-width: $break-point) {
+  @media (max-width: $break-point-sm) {
     font-size: 15px;
+    font-weight: 400;
+    line-height: 1.47;
   }
 }
 
 .cardWrapper {
+  flex: 1;
   display: flex;
-  width: 628px;
-  margin-left: 40px;
   flex-wrap: wrap;
   align-self: flex-end;
-
-  @media (max-width: $break-point) {
-    width: 311px;
-    align-self: center;
-    margin-left: 0px;
-  }
+  width: 100%;
 }
 
 .terraCard {
-  width: 628px;
+  width: 100%;
   height: 290px;
   background-color: $white;
   display: flex;
-  padding: 55px 38px 55px 63px;
+  padding: 55px 40px 55px 60px;
   font-weight: bold;
   text-align: right;
   justify-content: space-between;
-  font-size: 26px;
-
-  article {
-    height: 180px;
-
-    span {
-      font-size: 15px;
-      color: $gray;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  position: relative;
+  transition: .2s;
+  &:hover {
+    background-color: rgba(255,255,255,.65);
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    article {
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        color: $gray;
+      }
+      .cardtitle {
+        color: $text-color;
+        margin-top: -3px;
+      }
+    }
+    img {
+      width: 26px;
+      height: 26px;
+      align-self: flex-end;
     }
   }
-
-  @media (max-width: $break-point) {
-    width: 311px;
-    height: 185px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 16px;
-    padding: 0 32px;
+  @media (max-width: $break-point-lg) {
+    height: 270px;
+  }
+  @media (max-width: $break-point-md) {
+    height: auto;
+    padding: 28px 32px 25px;
+    font-size: 26px;
+    letter-spacing: -0.46px;
+    flex-direction: column;
     text-align: left;
 
     section {
-      display: flex;
-      justify-content: space-between;
       width: 100%;
-
-      form {
-        align-self: flex-end;
-      }
+      text-align: left;
+      margin-top: 8px;
 
       article {
-        height: 45px;
+        span {
+          font-size: 14px;
+        }
+      }
+
+      img {
+        width: 26px;
+        height: 26px;
+        align-self: flex-end;
+        position: absolute;
+        right: 32px;
+        bottom: 25px;
       }
     }
+  }
+}
+
+.subcardWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media (max-width: $break-point-md) {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
   }
 }
 
 .subCard {
-  width: 304px;
+  flex: 1;
   height: 350px;
   background-color: $white;
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  font-size: 24px;
   font-weight: bold;
+  letter-spacing: -0.37px;
   justify-content: center;
+  padding: 36px 36px 40px;
+  position: relative;
+  transition: .2s;
+  &:hover {
+    background-color: rgba(255,255,255,.6);
+  }
 
-  @media (max-width: $break-point) {
-    width: 311px;
-    height: 185px;
-    padding: 0 32px;
-    justify-content: flex-start;
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-left: 10px;
   }
 
   section {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-around;
-
-    @media (max-width: $break-point) {
-      justify-content: space-between;
-    }
-
-    form {
-      align-self: flex-end;
-    }
-
     article {
       span {
         font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
         color: $gray;
+      }
+      .cardtitle {
+        color: $text-color;
+        margin-top: -3px;
+      }
+    }
+    img {
+      width: 26px;
+      height: 26px;
+      align-self: flex-end;
+    }
+  }
+
+  @media (max-width: $break-point-md) {
+    height: auto;
+    padding: 28px 32px 25px;
+    font-size: 26px;
+    letter-spacing: -0.46px;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 16px;
+    
+    &:first-child {
+      margin-right: 0;
+    }
+  
+    &:last-child {
+      margin-left: 0;
+    }
+
+    section {
+      width: 100%;
+      text-align: left;
+      margin-top: 8px;
+
+      article {
+        span {
+          font-size: 14px;
+        }
+      }
+
+      img {
+        width: 26px;
+        height: 26px;
+        align-self: flex-end;
+        position: absolute;
+        right: 32px;
+        bottom: 25px;
       }
     }
   }
 }
 
-.subCard:last-child {
-  margin-left: 20px;
-
-  @media (max-width: $break-point) {
-    margin-left: 0px;
-  }
-}
-
 .img {
-  @media (max-width: $break-point) {
+  width: 180px;
+  height: 180px;
+  @media (max-width: $break-point-lg) {
+    width: 160px;
+    height: 160px;
+  }
+  @media (max-width: $break-point-md) {
     width: 64px;
+    height: 64px;
   }
 }

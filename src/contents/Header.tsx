@@ -20,12 +20,16 @@ const Header = () => (
             <br />
             Our aim is to increase the GDP
             <br />
-            of the blockchain ecosystem, together.
+            of the blockchain ecosystem,&nbsp;
+            <br className={s.mobile_br} />
+            together.
           </p>
-          <div className={s.learn}>
-            <span>Learn More</span>
-            <Button image={ButtonImg} />
-          </div>
+          <a href="https://medium.com/terra-money" target="_blank">
+            <div className={s.learn}>
+              <span>Learn More</span>
+              <Button image={ButtonImg} />
+            </div>
+          </a>
         </article>
       </section>
     </div>

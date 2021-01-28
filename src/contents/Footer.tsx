@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import Discord from "../images/discord.png";
 import Medium from "../images/medium.png";
 import Twitter from "../images/twitter.png";
@@ -9,17 +8,23 @@ const Footer = () => (
   <footer className={s.footer}>
     <span>Terraform Capital 2021</span>
     <form>
-      <Button
-        style={s.button}
-        image={Medium}
-        link="https://medium.com/terraform-capital"
-      />
-      <Button
-        style={s.button}
-        image={Twitter}
-        link="https://twitter.com/tfl_capital"
-      />
-      <Button style={s.button} image={Discord} />
+      <a href="https://medium.com/terraform-capital" target="_blank" rel="noreferrer">
+        <img
+          className={s.button}
+          src={Medium}
+          alt=""
+        />
+      </a>
+      <a href="https://twitter.com/tfl_capital" target="_blank" rel="noreferrer">
+        <img
+          className={s.button}
+          src={Twitter}
+          alt=""
+        />
+      </a>
+      <a>
+        <img className={s.button} src={Discord} alt="" />
+      </a>
     </form>
   </footer>
 );

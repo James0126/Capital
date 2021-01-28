@@ -11,16 +11,16 @@ const Content2 = () => {
         <article className={s.text}>
           <h1 className={s.title}>HOW DO I APPLY?</h1>
           <p className={s.info}>
-            Applications are regularly reviewed,
-            <br />
-            and you can expect an answer from us
-            <br />
+            Applications are regularly reviewed,&nbsp;
+            <br className={s.not_mobile_br} />
+            and you can expect an answer from us&nbsp;
+            <br className={s.not_mobile_br} />
             within 1-2 weeks of submission.
           </p>
         </article>
-        <form className={s.form}>
+        <div className={s.form}>
           <Button style={s.applyButton} text="Apply Now" link={link} />
-        </form>
+        </div>
       </section>
     </div>
   );
