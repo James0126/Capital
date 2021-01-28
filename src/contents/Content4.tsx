@@ -13,7 +13,7 @@ const Content4 = () => (
         <p className={s.info}>We’re on a mission to set money free.</p>
       </article>
       <div className={s.cardWrapper}>
-        <a href="https://terra.money/" target="_blank" className={s.terraCard}>
+        <a href="https://terra.money/" target="_blank" rel="noreferrer" className={s.terraCard}>
           <img src={Terra} alt="Terra" className={s.img} />
           <section>
             <article>
@@ -24,7 +24,7 @@ const Content4 = () => (
           </section>
         </a>
         <div className={s.subcardWrapper}>
-          <a href="https://medium.com/terra-money/announcing-terrausd-ust-the-interchain-stablecoin-53eab0f8f0ac" target="_blank" className={s.subCard}>
+          <a href="https://medium.com/terra-money/announcing-terrausd-ust-the-interchain-stablecoin-53eab0f8f0ac" target="_blank" rel="noreferrer" className={s.subCard}>
             <img src={UST} alt="UST" className={s.img} />
             <section>
               <article>

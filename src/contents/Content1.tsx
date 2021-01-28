@@ -12,7 +12,7 @@ const Content1 = () => (
         <li>Every week, we identify the most promising projects</li>
         <li>We provide capital to cover launch and audit costs</li>
         <li>
-          We ask that <a href="https://www.coingecko.com/en/coins/terra-usd" target="_blank">TerraUSD</a>, the interchain stablecoin, be
+          We ask that <a href="https://www.coingecko.com/en/coins/terra-usd" target="_blank" rel="noreferrer">TerraUSD</a>, the interchain stablecoin, be
           incorporated in some way
         </li>
         <li>We do not take any allocation of tokens before launch</li>

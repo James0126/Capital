@@ -24,7 +24,7 @@ const Header = () => (
             <br className={s.mobile_br} />
             together.
           </p>
-          <a href="https://medium.com/terra-money" target="_blank">
+          <a href="https://medium.com/terra-money" target="_blank" rel="noreferrer">
             <div className={s.learn}>
               <span>Learn More</span>
               <Button image={ButtonImg} />
