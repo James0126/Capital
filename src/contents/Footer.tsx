@@ -22,7 +22,7 @@ const Footer = () => (
           alt=""
         />
       </a>
-      <a href="https://twitter.com/tfl_capital" target="_blank" rel="noreferrer">
+      <a href="https://discord.gg/QUPeFqAZ" target="_blank" rel="noreferrer">
         <img className={s.button} src={Discord} alt="" />
       </a>
     </form>
