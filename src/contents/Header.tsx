@@ -14,7 +14,7 @@ const Header = () => (
             Capital
           </h1>
           <p className={s.info}>
-            We provide free access to launch capital
+            We provide free access to launch capital&nbsp;
             <br />
             for new networks and projects.
             <br />
