@@ -18,7 +18,7 @@ const Content4 = () => (
           <section>
             <article>
               <span>Learn more about</span>
-              <div className={s.cardtitle}>Terra</div>
+              <div className={s.cardtitle}>Terraform Labs</div>
             </article>
             <img src={ButtonImg} alt="" />
           </section>
